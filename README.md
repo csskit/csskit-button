@@ -15,7 +15,7 @@ Or just grab the css.
 If you installed with npm:
 
 - In your main css file: `@import "csskit-button";`
-- Use [sheetify](http://npmjs.org/sheetify) or [npm-rework-cli](http://npmjs.org/npm-rework-cli) to bundle the css.
+- Use a tool like [sheetify](http://npmjs.org/sheetify) or [rework-npm-cli](http://npmjs.org/rework-npm-cli) to bundle the css.
 - Example using npm-rework-cli: `npm-rework main.css -o bundle.css`
 
 ### CSS classes:
