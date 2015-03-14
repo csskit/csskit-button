@@ -20,11 +20,11 @@ If you installed with npm:
 
 ### CSS classes:
 
-- `.button` – **required** – apply to any buttons or a tags you want styled
+- `.button` – **required on `a` tags that need button styles**
 - `.small`- **optional**
 - `.medium`- **optional**
 - `.large`- **optional**
-- `.full-width`- **optional** – centers, makes button full width on mobile
+- `.full-width`- **optional** – makes button full width
 
 Example:
 
@@ -37,29 +37,53 @@ To add your own colors or other styles, you can overwrite the classes:
 ```
 .button,
 .button:link,
-.button:visited {}
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+
+}
 
 .button:hover,
-.button:focus {}
+.button:focus,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
 
-.button:active {}
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+
+}
 ```
 
 Or make your own secondary classes, similar to the included size or full-width classes:
 
 ```
-.button.example,
-.button.example:link,
-.button.example:visited {}
+.button-example,
+.button-example:link,
+.button-example:visited {}
 
-.button.example:hover,
-.button.example:focus {}
+.button-example:hover,
+.button-example:focus {}
 
-.button.example:active {}
+.button-example:active {}
 ```
 
+Then use the new button-example class on all button-style inputs:
+
 ```
-<a href="#" class="button example">Example</a>
+<button class="button-example">Example</button>
 ```
 
 ## License

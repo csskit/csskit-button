@@ -1,6 +1,10 @@
 .button,
 .button:link,
-.button:visited {
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 0.2em;
@@ -18,51 +22,72 @@
   padding: 0px 20px 0px 20px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
   border: 1px solid #444;
   color: #555;
 }
 
-.button:active {
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
   color: #000;
   border: 1px solid #000;
 }
 
-.button.small {
+.button.small,
+button.small,
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small {
   height: 35px;
   font-size: 0.7em;
   line-height: 35px;
 }
 
-.button.medium {
+.button.medium,
+button.medium,
+input[type="submit"].medium,
+input[type="reset"].medium,
+input[type="button"].medium {
   height: 55px;
   font-size: 1em;
   line-height: 55px;
   padding: 0px 22px;
 }
 
-.button.large {
+.button.large,
+button.large,
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large {
   height: 60px;
   font-size: 1.2em;
   line-height: 60px;
   padding: 0px 28px;
 }
 
-.button.full-width, .button.full-width:link {
+.button.full-width, 
+.button.full-width:link,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   width: 100%; 
-}
-
-@media (min-width: 400px) {
-  .button.full-width {
-    max-width: 300px !important; 
-  } 
 }
