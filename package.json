@@ -1,0 +1,16 @@
+{
+  "name": "csskit-button",
+  "description": "simple css for buttons",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git://github.com/sethvincent/csskit-button.git"
+  },
+  "style": "style.css",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^1.4.0"
+  }
+}
